@@ -1,0 +1,16 @@
+<!--
+Generated file. Do not edit directly.
+Edit data/series.yml or templates/program_pointer.qmd.j2 instead.
+-->
+---
+title: "Program"
+subtitle: "The latest edition has been archived"
+toc: false
+---
+
+{% set latest = editions[0] %}The latest satellite event, **{{ latest.title }}**, has concluded. The detailed program is now part of the archive.
+
+::: {.quick-links}
+[Open {{ latest.short_title }}]({{ latest.urls.archive_page }}){.quick-link}
+[View all editions](archive.qmd){.quick-link}
+:::

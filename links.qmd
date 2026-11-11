@@ -1,0 +1,12 @@
+---
+title: "Links"
+subtitle: "Original satellite websites"
+toc: false
+---
+
+| Edition | Main site | Detailed program |
+|---|---|---|
+| 2026 | <https://sites.google.com/view/physnet26> | <https://sites.google.com/view/physnet26/home/detailed-program> |
+| 2025 | <https://sites.google.com/view/physnet25/> | <https://sites.google.com/view/physnet25/physnet25/detailed-program> |
+| 2024 | <https://sites.google.com/view/physnet24/> | <https://sites.google.com/view/physnet24/phynet24/detailed-program> |
+| 2023 | <https://sites.google.com/view/physnet23/> | <https://sites.google.com/view/physnet23/phynet23-program/detailed-program> |

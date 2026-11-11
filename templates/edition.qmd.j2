@@ -1,0 +1,123 @@
+---
+# title: "{{ edition.short_title }}"
+# subtitle: "{{ edition.kicker }}"
+---
+
+:::{ .landing-title }
+
+```{=html}
+<div class="landing-title-image-wrap edition-title-image-wrap">
+  <img
+    class="landing-title-image"
+    src="{{ edition.assets.landing_image | rel }}"
+    alt="{{ edition.kicker }}: {{ edition.title }}{% if edition.conference is defined and edition.conference %} at {{ edition.conference }}{% endif %}">
+</div>
+```
+
+<div class="subtitle">{{ edition.description }}</div>
+
+<a class="btn-physnet" href="#program">View program</a>
+{% if edition.urls is defined and edition.urls.original_site is defined and edition.urls.original_site %}<a class="btn-physnet secondary" href="{{ edition.urls.original_site }}">Original Google Site</a>{% endif %}
+:::
+
+::: {.event-summary}
+::: {.summary-item}
+**Date**  
+{{ edition.date }}
+:::
+
+::: {.summary-item}
+**Time**  
+{{ edition.time }}
+:::
+
+::: {.summary-item}
+**Venue**  
+{% if edition.venue is defined and edition.venue.name is defined and edition.venue.name %}{{ edition.venue.name }}{% if edition.location is defined and edition.location %}, {{ edition.location }}{% endif %}{% elif edition.location is defined and edition.location %}{{ edition.location }}{% endif %}
+:::
+
+::: {.summary-item}
+**Room**  
+{% if edition.venue is defined and edition.venue.room is defined and edition.venue.room %}{{ edition.venue.room }}{% else %}TBA{% endif %}
+:::
+:::
+
+
+## Speakers
+
+::: {.speaker-grid}
+
+{% for speaker in edition.speakers %}
+::: {.speaker-card .with-photo}
+<img class="speaker-photo" src="{{ speaker.image | rel if speaker.image is defined and speaker.image else edition.assets.speaker_placeholder | rel }}" alt="Portrait of {{ speaker.name }}" loading="lazy" onerror="this.onerror=null;this.src='{{ edition.assets.speaker_placeholder | rel }}';">
+
+### {{ speaker.name }}
+{{ speaker.affiliation }}
+:::
+
+{% endfor %}
+:::
+
+## Program
+
+::: {.program-list}
+
+{% for item in edition.program %}
+::: {.program-item{% if item.type == 'break' %} .break{% endif %}}
+<div class="program-time">{{ item.time }}</div>
+<div class="program-title">{{ item.title }}</div>
+{% if item.presenter is defined and item.presenter %}<div class="program-speaker">{{ item.presenter }}</div>{% elif item.authors is defined and item.authors %}<div class="program-speaker">{{ item.authors | join(', ') }}</div>{% endif %}
+
+{% if item.abstract is defined and item.abstract %}
+<details>
+<summary>Abstract</summary>
+
+{{ item.abstract }}
+
+</details>
+{% endif %}
+:::
+
+{% endfor %}
+:::
+
+## Keywords
+
+::: {.keyword-list}
+{% for keyword in edition.keywords %}<span>{{ keyword }}</span>
+{% endfor %}:::
+
+## Organizers
+
+::: {.organizer-grid}
+
+{% for organizer in edition.organizers %}
+::: {.speaker-card}
+### {{ organizer.name }}
+{{ organizer.affiliation }}
+:::
+
+{% endfor %}
+:::
+
+## Call for contributions
+
+{% if edition.call_for_contributions is defined and edition.call_for_contributions and edition.call_for_contributions.status is defined and edition.call_for_contributions.status == "closed" -%}
+The call for contributions is closed. This section is retained for archival reference.
+
+{{ edition.call_for_contributions.description }}
+{% elif edition.call_for_contributions is defined and edition.call_for_contributions -%}
+{{ edition.call_for_contributions.description }}
+{% else -%}
+Call information is not available.
+{% endif %}
+
+## Archival note
+
+::: {.archive-note}
+{% if edition.urls is defined and edition.urls.original_site is defined and edition.urls.original_site %}Original public page: <{{ edition.urls.original_site }}>  {% endif %}
+{% if edition.urls is defined and edition.urls.detailed_program is defined and edition.urls.detailed_program %}  
+Detailed program page: <{{ edition.urls.detailed_program }}>  {% endif %}
+
+This is a curated static reconstruction intended for long-term preservation on GitHub Pages.
+:::

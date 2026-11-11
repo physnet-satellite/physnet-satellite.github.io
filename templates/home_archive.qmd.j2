@@ -1,0 +1,50 @@
+<!--
+Generated file. Do not edit directly.
+Edit data/series.yml, data/editions/*.yml, or templates/home_archive.qmd.j2 instead.
+-->
+---
+title: ""
+toc: false
+listing: false
+---
+
+```{=html}
+<div class="landing-title-image-wrap">
+  <img
+    class="landing-title-image"
+    src="{{ series.assets.series_landing_image | rel }}"
+    alt="{{ series.subtitle }}: {{ series.title }}">
+</div>
+```
+
+The **{{ series.title }}** satellite series brings together researchers working on networks whose nodes and links are physical objects embedded in space. The series focuses on how spatial embedding, geometry, volume exclusion, packing, material constraints, and physical interactions shape network structure and function.
+
+{% set latest = editions[0] %}The latest archived edition is **{{ latest.title }} @ {{ latest.conference }}**.
+
+::: {.quick-links}
+[View archive](archive.qmd){.quick-link}
+{% for edition in editions %}[{{ edition.short_title }}]({{ edition.urls.archive_page }}){.quick-link}
+{% endfor %}
+:::
+
+## Archive
+
+::: {.edition-grid}
+{% for edition in editions %}
+
+::: {.edition-card}
+### [{{ edition.title }}]({{ edition.urls.archive_page }})
+
+{{ edition.conference }}  
+{{ edition.location }}  
+{{ edition.date }}
+:::
+{% endfor %}
+
+:::
+
+## About the series
+
+Physical networks are networked systems in which links and nodes are material or spatially embedded objects. Examples include neural connectomes, vascular structures, porous media, cellular and cytoskeletal networks, fiber systems, disordered metamaterials, and random packings.
+
+The satellite series provides a common venue for network science, statistical physics, soft matter, biophysics, geometry, topology, and materials science perspectives on these systems.

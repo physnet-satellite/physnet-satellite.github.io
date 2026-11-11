@@ -1,0 +1,31 @@
+<!--
+Generated file. Do not edit directly.
+Edit data/series.yml, data/editions/*.yml, or templates/archive.qmd.j2 instead.
+-->
+---
+title: "Archive"
+subtitle: "Physical Networks satellite editions"
+toc: false
+---
+
+The archive collects static pages for past editions of the Physical Networks satellite series.
+
+::: {.edition-grid}
+{% for edition in editions %}
+
+::: {.edition-card}
+### [{{ edition.title }}]({{ edition.urls.archive_page }})
+
+**{{ edition.conference }}**  
+{{ edition.location }}  
+{{ edition.date }}
+
+{% if edition.urls.original_site %}[Original site]({{ edition.urls.original_site }}){.btn-physnet .secondary}{% endif %}
+:::
+{% endfor %}
+
+:::
+
+::: {.archive-note}
+The archive pages are generated from edition-level YAML files in `data/editions/`. They are curated static reconstructions of public event websites and locally prepared program material.
+:::

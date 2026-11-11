@@ -1,0 +1,191 @@
+year: 2025
+roman: III
+title: Physical Networks III
+short_title: PhysNet 2025
+kicker: NetSci25 Satellite
+conference: NetSci 2025
+type: NetSci satellite
+status: archived
+date: June 2, 2025
+time: 14:30 to 18:30
+location: Maastricht, the Netherlands
+venue:
+  name: MECC Maastricht
+  room: FSE C1.005 at PHS1, Faculty of Science and Engineering, Maastricht University
+  city: Maastricht
+  country: The Netherlands
+  address_public: Paul-Henri Spaaklaan 1, 6229 EN Maastricht, The Netherlands
+urls:
+  original_site: https://sites.google.com/view/physnet25/
+  detailed_program: https://sites.google.com/view/physnet25/physnet25/detailed-program
+  archive_page: editions/2025/index.qmd
+assets:
+  landing_image: assets/img/common/landing/2025_landing-title-logo-right-transparent.png
+  speaker_placeholder: assets/img/speaker-placeholder.svg
+description: Physical networks aim to understand complex systems subjected to physical constraints, such as volume exclusion or repulsive forces, that shape their topological and geometric organization. Systems such as neurons, cell cytoskeletons, vascular structures, porous and colloidal networks, and disordered metamaterials are made of nodes and links that are physical objects and cannot overlap with each other.
+speakers:
+- name: Marc Barthelemy
+  affiliation: Institut de Physique Théorique (CEA) and Centre d'Analyse et de Mathématique Sociales
+  institution: Institut de Physique Théorique (CEA) and Centre d'Analyse et de Mathématique Sociales
+  image: assets/img/2025/speakers/2025_speaker_marc-barthelemy_headshot.jpg
+  url: ''
+- name: Gang Yan
+  affiliation: MOE Key Laboratory of Advanced Micro-Structured Materials and School of Physical Science and Engineering, Tongji University
+  institution: MOE Key Laboratory of Advanced Micro-Structured Materials and School of Physical Science and Engineering, Tongji University
+  image: assets/img/2025/speakers/2025_speaker_gang-yan_headshot.jpg
+  url: ''
+- name: Maxime Lucas
+  affiliation: Namur Institute for Complex Systems, Université de Namur
+  institution: Namur Institute for Complex Systems, Université de Namur
+  image: assets/img/2025/speakers/2025_speaker_maxime-lucas_headshot.jpg
+  url: ''
+- name: Iva Bačić
+  affiliation: Institute of Climate and Energy Systems, Forschungszentrum Jülich
+  institution: Institute of Climate and Energy Systems, Forschungszentrum Jülich
+  image: assets/img/2025/speakers/2025_speaker_iva-bacic_headshot.jpg
+  url: ''
+- name: Ivan Kryven
+  affiliation: Mathematical Institute, Utrecht University
+  institution: Mathematical Institute, Utrecht University
+  image: assets/img/2025/speakers/2025_speaker_ivan-kryven_headshot.jpg
+  url: ''
+- name: Fabian Coupette
+  affiliation: ''
+  institution: ''
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+- name: Perrin E. Ruth
+  affiliation: ''
+  institution: ''
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+- name: Niek Mooij
+  affiliation: ''
+  institution: ''
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+- name: Márton Pósfai
+  affiliation: Department of Network and Data Science, CEU
+  institution: Department of Network and Data Science, CEU
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+program:
+- time: 14:30 to 15:00
+  title: Surfacic networks
+  presenter: Marc Barthelemy
+  type: talk
+  session: Session I
+  chair: Márton Pósfai
+  authors:
+  - Marc Barthelemy
+  affiliations: []
+  abstract: This talk introduced surfacic networks, a class of spatial networks constrained to a two-dimensional manifold with elevation fluctuations. New tools include lazy paths that minimize uphill exertion, graph arduousness quantifying the impact of elevation on path choices, and excess effort capturing additional climb embedded in shortest paths. Toy models and empirical pedestrian networks show how topography alters shortest path geometry, betweenness centrality, and network efficiency.
+- time: 15:00 to 15:25
+  title: Growth and structure of underground fungal networks
+  presenter: Maxime Lucas
+  type: talk
+  session: Session I
+  chair: Márton Pósfai
+  authors:
+  - Maxime Lucas
+  affiliations: []
+  abstract: Arbuscular mycorrhizal fungi form symbiotic relationships with plant roots, and their network structure affects transport efficiency, exploration, and robustness. This work introduces a minimal spatial model of fungal network growth based on hyphal growth, branching, and fusion. Limited energy is allocated among local actions under geometric constraints, generating diverse morphologies and revealing principles relevant to decentralized, resource-limited biological and artificial systems.
+- time: 15:25 to 15:45
+  title: Continuum percolation as a branching process
+  presenter: Fabian Coupette
+  type: contributed talk
+  session: Session I
+  chair: Márton Pósfai
+  authors:
+  - Fabian Coupette
+  affiliations: []
+  abstract: Percolation thresholds depend on the specific properties of a system. This work maps continuum percolation problems onto branching processes, providing rigorous lower bounds on the percolation threshold that tighten as additional statistical information is incorporated. The approach gives qualitative predictions for different continuum problems and analytic predictions for how thresholds vary with parameters such as particle size distribution, particle shape, or interaction potential.
+- time: 15:45 to 16:00
+  title: Cyclic Random Graphs Predicting Giant Molecules in Hydrocarbon Pyrolysis
+  presenter: Perrin E. Ruth
+  type: contributed talk
+  session: Session I
+  chair: Márton Pósfai
+  authors:
+  - Perrin E. Ruth
+  affiliations: []
+  abstract: This talk proposed using random graphs to describe molecular composition in hydrocarbon pyrolysis. The carbon skeletons of molecules form a realization of a random graph, and the goal is to predict molecule-size distributions and the size of the largest molecule over ranges of composition and temperature. The talk argued that loops are crucial for emergent properties and introduced a model with disjoint loops as an analytically tractable description of sparse loop structure.
+- time: 16:00 to 16:30
+  title: Coffee break
+  presenter: ''
+  type: break
+  session: Break
+  authors: []
+  affiliations: []
+  abstract: ''
+- time: 16:30 to 17:00
+  title: Geometric Scaling Law in Fruit Fly's Neuronal Networks
+  presenter: Gang Yan
+  type: talk
+  session: Session II
+  chair: Jasper van der Kolk
+  authors:
+  - Gang Yan
+  affiliations: []
+  abstract: Analysis of fruit fly synapse-resolution connectomes across developmental stages reveals a consistent scaling law of neuronal connection probability with spatial distance. This power-law behavior differs from the exponential distance rule observed in coarse-grained brain networks. The geometric scaling law aligns with maximum entropy principles in information communication and functional criticality, and provides a quantitative predictor of neuronal connectivity based on distance and in- and out-degrees.
+- time: 17:00 to 17:25
+  title: Linear physical networks
+  presenter: Iva Bačić
+  type: talk
+  session: Session II
+  chair: Jasper van der Kolk
+  authors:
+  - Iva Bačić
+  affiliations: []
+  abstract: Physical networks, such as brain connectomes, composite metamaterials, mycelium, and 3D integrated circuits, are spatially embedded networks whose nodes and links have shape, occupy volume, and do not intersect. This work studies the onset and impact of physicality in models of linear physical networks with non-overlapping cylindrical links. The models exhibit transitions corresponding to the onset of physicality and to finite-volume or jammed states, with a meta-graph formalism used to predict these effects.
+- time: 17:25 to 17:45
+  title: ScaleRich Materials
+  presenter: Niek Mooij
+  type: contributed talk
+  session: Session II
+  chair: Jasper van der Kolk
+  authors:
+  - Niek Mooij
+  affiliations: []
+  abstract: This talk introduced ScaleRich materials, truss systems characterized by heterogeneous line lengths, thicknesses, and connectivity distributions. The construction selects nucleation points and orientations, adds line segments with thicknesses drawn from a power law, and repeats until the structure jams or completes. The resulting thickness, length, and degree distributions follow power laws, and the model exhibits a transition between jammed and finite-density states.
+- time: 17:45 to 18:10
+  title: How do networks in materials look like?
+  presenter: Ivan Kryven
+  type: talk
+  session: Session II
+  chair: Jasper van der Kolk
+  authors:
+  - Ivan Kryven
+  affiliations: []
+  abstract: Materials science offers opportunities and challenges for network modeling. The networks underlying physical connections between molecules, monomers, particles, crystals, domains, and related structures can determine material properties. The talk outlined criteria that network models for materials should satisfy, highlighted open challenges, and discussed possible modeling strategies with examples from polymer materials.
+- time: 18:10 to 18:25
+  title: Network dismantling by physical damage
+  presenter: Márton Pósfai
+  type: contributed talk
+  session: Session II
+  chair: Jasper van der Kolk
+  authors:
+  - Márton Pósfai
+  affiliations: []
+  abstract: This work explores the robustness of complex networks against physical damage in spatially embedded models and datasets where links are physical objects or physically transfer some quantity. Physical damage is simulated by tiling networks with boxes and damaging them sequentially. An intersection graph tracks links passing through tiles, allowing analysis of how layout and topology jointly affect percolation thresholds. The framework is compared against targeted physical damage and empirical networks.
+keywords:
+- Network geometry
+- Network and soft materials
+- Statistical topology
+- Rheology and jamming
+- Critical phenomena
+- Random packings
+- Polymer physics
+organizers:
+- name: Márton Pósfai
+  affiliation: Department of Network and Data Science, CEU
+- name: Ivan Bonamassa
+  affiliation: Department of Network and Data Science, CEU
+- name: Jasper van der Kolk
+  affiliation: Department of Network and Data Science, CEU
+- name: Jun Yamamoto
+  affiliation: Department of Network and Data Science, CEU
+call_for_contributions:
+  status: closed
+  description: The satellite welcomed contributions spanning mathematics, physics, material science, computer science, biophysics, and related areas. Applications were requested as one-page abstracts by 17 February 2025.
+source_note: This file summarizes public information from the PhysNet2025 Google Site and the static archive reconstruction. Personal email addresses are omitted from this public repository metadata.

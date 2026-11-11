@@ -1,0 +1,11 @@
+---
+title: "Links"
+subtitle: "Original satellite websites"
+toc: false
+---
+
+| Edition | Main site | Detailed program |
+|---|---|---|
+{% for edition in editions -%}
+| {{ edition.year }} | {% if edition.urls.original_site is defined and edition.urls.original_site %}<{{ edition.urls.original_site }}>{% endif %} | {% if edition.urls.detailed_program is defined and edition.urls.detailed_program %}<{{ edition.urls.detailed_program }}>{% endif %} |
+{% endfor %}

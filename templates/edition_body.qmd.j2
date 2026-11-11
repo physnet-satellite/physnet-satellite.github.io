@@ -1,0 +1,94 @@
+{% if edition.speakers %}
+## Speakers
+
+::: {.speaker-grid}
+{% for speaker in edition.speakers %}
+
+::: {.speaker-card .with-photo}
+{% if speaker.get('image') %}<img class="speaker-photo" src="{{ speaker.get('image') | rel }}" alt="Portrait of {{ speaker.name }}" loading="lazy" onerror="this.onerror=null;this.src='{{ edition.assets.speaker_placeholder | rel }}';">{% endif %}
+
+{% if speaker.get('url') %}
+### [{{ speaker.name }}]({{ speaker.get('url') }})
+{% else %}
+### {{ speaker.name }}
+{% endif %}
+{{ speaker.affiliation }}
+:::
+{% endfor %}
+
+:::
+{% endif %}
+
+{% if edition.program %}
+## Program
+
+::: {.program-list}
+{% for item in edition.program %}
+
+::: {.program-item{% if item.type == 'break' %} .break{% endif %}}
+<div class="program-time">{{ item.time }}</div>
+<div class="program-title">{{ item.title }}</div>
+{% if item.presenter %}<div class="program-speaker">{{ item.presenter }}</div>{% endif %}
+{% if item.get('authors') and (item.get('authors') | join(', ')) != item.get('presenter', '') %}
+<div class="program-speaker"><strong>Authors:</strong> {{ item.get('authors') | join(', ') }}</div>
+{% endif %}
+{% if item.get('affiliations') %}
+
+<ul class="affiliations">
+{% for affiliation in item.get('affiliations') %}
+  <li>{{ affiliation }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if item.get('abstract') %}
+
+<details>
+<summary>Abstract</summary>
+
+{{ item.get('abstract') }}
+
+</details>
+{% endif %}
+:::
+{% endfor %}
+
+:::
+{% endif %}
+
+{% if edition.keywords %}
+## Keywords
+
+::: {.keyword-list}
+{% for keyword in edition.keywords %}<span>{{ keyword }}</span>
+{% endfor %}
+:::
+{% endif %}
+
+{% if edition.organizers %}
+## Organizers
+
+::: {.organizer-grid}
+{% for organizer in edition.organizers %}
+
+::: {.speaker-card}
+### {{ organizer.name }}
+{{ organizer.affiliation }}
+:::
+{% endfor %}
+
+:::
+{% endif %}
+
+{% if edition.call_for_contributions %}
+## Call for contributions
+
+{% if edition.call_for_contributions.status == 'closed' %}The call for contributions is closed. This section is retained for archival reference.
+
+{% endif %}{{ edition.call_for_contributions.description }}
+{% endif %}
+
+## Source
+
+{{ edition.source_note }}
+
+{% if edition.urls.original_site %}<{{ edition.urls.original_site }}>{% endif %}

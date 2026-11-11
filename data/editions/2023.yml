@@ -1,0 +1,184 @@
+year: 2023
+roman: I
+title: Physical Networks I
+short_title: PhysNet 2023
+kicker: NetSci23 Satellite
+conference: NetSci 2023
+type: NetSci workshop
+status: archived
+date: Tuesday, July 11, 2023
+time: 14:00 to 18:00
+location: Vienna, Austria
+venue:
+  name: University of Vienna
+  room: Seminarraum 6
+  city: Vienna
+  country: Austria
+  address_public: Universitätsring 1, 1010 Wien, Austria
+urls:
+  original_site: https://sites.google.com/view/physnet23/
+  detailed_program: https://sites.google.com/view/physnet23/phynet23-program/detailed-program
+  archive_page: editions/2023/index.qmd
+assets:
+  landing_image: assets/img/common/landing/2023_landing-title-logo-right-transparent.png
+  speaker_placeholder: assets/img/speaker-placeholder.svg
+description: Physical networks are complex systems subjected to physical constraints, such as volume exclusion or repulsive forces, that shape their networked organization. Systems such as neurons, fiber networks, cell cytoskeletons, and mycorrhizal architectures are composed of links and nodes that are physical objects and therefore cannot overlap with each other.
+speakers:
+- name: Albert-László Barabási
+  affiliation: Northeastern University, Harvard Medical School
+  institution: Northeastern University, Harvard Medical School
+  image: assets/img/2023/speakers/2023_speaker_albert-laszlo-barabasi_headshot.jpg
+  url: ''
+- name: Maria Ercsey-Ravasz
+  affiliation: Faculty of Physics, Babeș-Bolyai University; Transylvanian Institute of Neuroscience
+  institution: Faculty of Physics, Babeș-Bolyai University; Transylvanian Institute of Neuroscience
+  image: assets/img/2023/speakers/2023_speaker_maria-ercsey-ravasz_headshot.jpg
+  url: ''
+- name: Sang Hoon Lee
+  affiliation: Department of Physics, Gyeongsang National University
+  institution: Department of Physics, Gyeongsang National University
+  image: assets/img/2023/speakers/2023_speaker_sang-hoon-lee_headshot.jpg
+  url: ''
+- name: Ádám Timár
+  affiliation: Faculty of Physical Science, University of Iceland; Alfréd Rényi Institute of Mathematics
+  institution: Faculty of Physical Science, University of Iceland; Alfréd Rényi Institute of Mathematics
+  image: assets/img/2023/speakers/2023_speaker_adam-timar_headshot.jpg
+  url: ''
+- name: Andreas Neophytou
+  affiliation: School of Chemistry, University of Birmingham
+  institution: School of Chemistry, University of Birmingham
+  image: assets/img/2023/speakers/2023_speaker_andreas-neophytou_headshot.jpg
+  url: ''
+- name: Cory Glover
+  affiliation: ''
+  institution: ''
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+- name: Hillel Sanhedrai
+  affiliation: ''
+  institution: ''
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+- name: Luka Blagojević
+  affiliation: ''
+  institution: ''
+  image: assets/img/speaker-placeholder.svg
+  url: ''
+program:
+- time: 14:00 to 14:05
+  title: Welcome
+  presenter: Workshop organizers
+  type: opening
+  session: Opening
+  authors:
+  - Workshop organizers
+  affiliations: []
+  abstract: ''
+- time: 14:05 to 14:40
+  title: Understanding the role of physicality in networks
+  presenter: Albert-László Barabási
+  type: talk
+  session: Session I
+  authors:
+  - Albert-László Barabási
+  affiliations: []
+  abstract: I will explore the applications of the network science toolset to physical networks, like the brain or metamaterials, which are networks whose links are physical entities that cannot cross each other. Link physicality affects both the evolution and the structure of a network, in a way that is not captured by current graph-based approaches. Yet, the existence of an exact mapping between physical networks and independent sets allows us to derive the onset of physical effects and the emergence of a jamming transition, demonstrating that physicality impacts the network structure even when the total volume of the links is negligible.
+- time: 14:40 to 15:05
+  title: 'Modeling the inter-areal cortical network based on a distance rule: from the macaque to the mouse'
+  presenter: Maria Ercsey-Ravasz
+  type: talk
+  session: Session I
+  authors:
+  - Maria Ercsey-Ravasz
+  affiliations: []
+  abstract: Mammals show a wide range of brain sizes, reflecting adaptation to diverse habitats. Comparing inter-areal cortical networks across brains of different sizes and mammalian orders provides robust information on evolutionarily preserved features and species-specific processing modalities. However, these networks are spatially embedded, directed, and weighted, making comparisons challenging. Analysis of the large-scale connectome inferred from a consistent database of retrograde tracer experiments in the macaque cortex has shown that many of its local, global, and weighted properties are well predicted by a simple network model based on an exponential distance rule. Here we show that the large-scale connectome of the mouse and rat cortex is also strongly determined by an exponential distance rule but with a different decay rate. Comparisons reveal network invariants between species, exemplified in motif profiles and connection similarity indices, but also significant differences,
+    including fractionally smaller and much weaker long-distance connections in the macaque than in the mouse.
+- time: 15:05 to 15:30
+  title: A network-of-networks model for physical networks
+  presenter: Ádám Timár
+  type: talk
+  session: Session I
+  authors:
+  - Ádám Timár
+  affiliations: []
+  abstract: 'Physical networks are networks represented in Euclidean space with edges thought of as physical objects with constraints, for example that they cannot intersect. We define a model through a dynamical process: a sequence of loop-erased random walks on the grid, run until they hit the previously constructed piece of the network. The trajectory of one such walk will then be a vertex of the corresponding abstract network, with adjacencies given by how the trajectories hit. Relying on this representation, we model the growth of physical networks and show that volume exclusion induces heterogeneity in both node volume and degree, with the two becoming correlated. Calculating the Laplacian spectra of these networks, we show that these correlations strongly affect their function.'
+- time: 15:30 to 16:00
+  title: Coffee break
+  presenter: ''
+  type: break
+  session: Break
+  authors: []
+  affiliations: []
+  abstract: ''
+- time: 16:00 to 16:25
+  title: Scale-dependent landscape of semi-nested community structures of 3D chromosome contact networks
+  presenter: Sang Hoon Lee
+  type: talk
+  session: Session II
+  authors:
+  - Sang Hoon Lee
+  affiliations: []
+  abstract: Mammalian DNA folds into 3D structures that facilitate and regulate transcription, DNA repair, and epigenetics. Several insights derive from chromosome capture methods such as Hi-C, which allow researchers to construct contact maps of 3D interactions among DNA segment pairs. We extract 3D communities using the generalized Louvain algorithm with an adjustable resolution parameter, construct hierarchical trees connecting these communities, and find that chromosomes are more complex than a perfect hierarchy. We also investigate inconsistency in 3D communities in Hi-C data and relate nodal inconsistency or functional flexibility to local chromatin activity.
+- time: 16:25 to 16:50
+  title: Untangling the Mysteries of Supercooled Water
+  presenter: Andreas Neophytou
+  type: talk
+  session: Session II
+  authors:
+  - Andreas Neophytou
+  affiliations: []
+  abstract: The origin of the anomalous thermodynamic properties of liquid water has been debated for decades. One hypothesis is that a first-order liquid-liquid phase transition line for water exists in the supercooled region of its pressure-temperature phase diagram, terminating at a liquid-liquid critical point. We design a colloidal analogue of liquid water that is experimentally approachable and displays a liquid-liquid critical point. Using topology, we introduce an order parameter for the transition and show that the transition is between two topologically distinct liquid networks.
+- time: 16:50 to 17:05
+  title: Effects of Network Topology on Physical Entanglement
+  presenter: Cory Glover
+  type: contributed talk
+  session: Session II
+  authors:
+  - Cory Glover
+  affiliations: []
+  abstract: Physical networks are networks embedded in three-dimensional space where nodes and links have both position and thickness. We define the crossing matrix of a physical network and use it to measure entangledness in physical networks with the average crossing number. In general, there is a positive correlation between energy in the system and the average crossing number. We focus on linear physical networks and find that system size, average degree, and degree heterogeneity affect the growth in network entanglement as system energy increases.
+- time: 17:05 to 17:20
+  title: On the evolution of physical networks
+  presenter: Hillel Sanhedrai
+  type: contributed talk
+  session: Session II
+  authors:
+  - Hillel Sanhedrai
+  affiliations: []
+  abstract: Unlike virtual connections, in physical networks such as the brain or vascular system, links are physical objects. They occupy volume and cannot intersect each other. This characteristic affects the connectivity pattern of evolving networks. We aim to find a theory to describe the evolution of such networks, with a specific focus on the degree and link-length distributions.
+- time: 17:20 to 17:35
+  title: Robustness of physical networks against spatial damage
+  presenter: Luka Blagojević
+  type: contributed talk
+  session: Session II
+  authors:
+  - Luka Blagojević
+  affiliations: []
+  abstract: ''
+- time: '17:35'
+  title: Closing remarks
+  presenter: Workshop organizers
+  type: closing
+  session: Closing
+  authors:
+  - Workshop organizers
+  affiliations: []
+  abstract: ''
+keywords:
+- Graph embeddings and layout
+- Soft matter
+- Nonlinear dynamics
+- Mechanics
+- Network materials
+- Biomaterials
+- Critical phenomena
+- Graphons and graph limits
+organizers:
+- name: Márton Pósfai
+  affiliation: Department of Network and Data Science, CEU
+- name: Ivan Bonamassa
+  affiliation: Department of Network and Data Science, CEU
+call_for_contributions:
+  status: closed
+  description: The workshop welcomed contributions spanning multiple disciplines, including mathematics, physics, material science, computer science, and biophysics. Applications were requested as one-page abstracts by 31 May 2023.
+source_note: This file summarizes public information from the PhysNet2023 Google Site and the static archive reconstruction. Personal email addresses are omitted from this public repository metadata.

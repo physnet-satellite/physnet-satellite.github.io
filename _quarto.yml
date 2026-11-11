@@ -1,0 +1,100 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - archive.qmd
+    - links.qmd
+    - program.qmd
+    - 404.qmd
+    - editions/2023/index.qmd
+    - editions/2024/index.qmd
+    - editions/2025/index.qmd
+    - editions/2026/index.qmd
+  resources:
+    - assets/styles.css
+    - assets/img/2023/speakers/2023_speaker_adam-timar_headshot.jpg
+    - assets/img/2023/speakers/2023_speaker_albert-laszlo-barabasi_headshot.jpg
+    - assets/img/2023/speakers/2023_speaker_andreas-neophytou_headshot.jpg
+    - assets/img/2023/speakers/2023_speaker_maria-ercsey-ravasz_headshot.jpg
+    - assets/img/2023/speakers/2023_speaker_sang-hoon-lee_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_adilson-e-motter_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_anastasia-salova_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_benjamin-piazza_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_daniel-barabasi_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_fabrizio-de-vico-fallani_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_filippo-radicchi_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_jasper-van-der-kolk_headshot.jpg
+    - assets/img/2024/speakers/2024_speaker_szabolcs-horvat_headshot.jpg
+    - assets/img/2025/speakers/2025_speaker_gang-yan_headshot.jpg
+    - assets/img/2025/speakers/2025_speaker_iva-bacic_headshot.jpg
+    - assets/img/2025/speakers/2025_speaker_ivan-kryven_headshot.jpg
+    - assets/img/2025/speakers/2025_speaker_marc-barthelemy_headshot.jpg
+    - assets/img/2025/speakers/2025_speaker_maxime-lucas_headshot.jpg
+    - assets/img/2026/speakers/2026_speaker_ivan-bonamassa_headshot.jpg
+    - assets/img/2026/speakers/2026_speaker_jorn-dunkel_headshot.jpg
+    - assets/img/2026/speakers/2026_speaker_katia-bertoldi_headshot.jpg
+    - assets/img/2026/speakers/2026_speaker_mason-a-porter_headshot.jpg
+    - assets/img/2026/speakers/2026_speaker_xiangyi-meng_headshot.jpg
+    - assets/img/common/landing/2023_landing-title-logo-right-transparent.png
+    - assets/img/common/landing/2024_landing-title-logo-right-transparent.png
+    - assets/img/common/landing/2025_landing-title-logo-right-transparent.png
+    - assets/img/common/landing/2026_landing-title-logo-right-transparent.png
+    - assets/img/common/landing/series_landing-title-logo-right-transparent.png
+    - assets/img/common/logos/common_logo_physnet-mark.png
+    - assets/img/speaker-placeholder.svg
+
+website:
+  title: "Physical Networks"
+  description: "Website and archive for the Physical Networks NetSci satellite series."
+  site-url: "https://physnet-satellite.github.io/"
+  repo-url: "https://github.com/physnet-satellite/physnet-satellite.github.io"
+  favicon: assets/img/common/logos/common_logo_physnet-mark.png
+  navbar:
+    background: "white"
+    foreground: "#4f5b66"
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Archive"
+        href: archive.qmd
+      - text: "Editions"
+        menu:
+          - text: "2026, Boston"
+            href: editions/2026/index.qmd
+          - text: "2025, Maastricht"
+            href: editions/2025/index.qmd
+          - text: "2024, Québec City"
+            href: editions/2024/index.qmd
+          - text: "2023, Vienna"
+            href: editions/2023/index.qmd
+      - text: "Links"
+        href: links.qmd
+    right:
+      - icon: github
+        href: "https://github.com/physnet-satellite/physnet-satellite.github.io"
+        aria-label: "GitHub repository"
+  page-footer:
+    left: "Physical Networks Satellite Series"
+    right: "Static site built with Quarto."
+  search: true
+  page-navigation: true
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: default
+    css: assets/styles.css
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    link-external-icon: false
+    link-external-newwindow: true
+    code-copy: true
+    anchor-sections: true
+    fontsize: 1rem
+    linkcolor: "#1f4e79"
+
+execute:
+  freeze: auto

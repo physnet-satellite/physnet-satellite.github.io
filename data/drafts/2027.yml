@@ -1,0 +1,78 @@
+year: 2027
+roman: V
+title: Physical Networks V
+short_title: PhysNet 2027
+kicker: NetSci27 Satellite
+conference: NetSci 2027
+type: NetSci satellite
+status: draft
+
+date: TBA
+time: TBA
+location: TBA
+
+venue:
+  name: TBA
+  room: TBA
+  city: TBA
+  state: 
+  country: TBA
+  address_public: 
+
+urls:
+  original_site: TBA
+  detailed_program: TBA
+  archive_page: editions/2027/index.qmd
+
+assets:
+  landing_image: assets/img/common/landing/2027_landing-title-logo-right-transparent.png
+  speaker_placeholder: assets/img/speaker-placeholder.svg
+
+description: >-
+  Physical networks aim to understand complex systems subjected to physical
+  constraints, such as volume exclusion or repulsive forces, that shape their
+  topological and geometric organization. Systems as diverse as neurons, cellular
+  cytoskeletons, vascular structures, porous and colloidal networks, and
+  disordered metamaterials are composed of nodes and links that are physical
+  objects and cannot overlap with each other.
+
+speakers: 
+  - name: TBA
+    affiliation: TBA
+    title: TBA
+    abstract: TBA
+
+program:
+  - time: TBA
+    title: Opening Remarks
+    presenter: Physical Networks Organizing Committee
+    type: opening
+    affiliations:
+      - Physical Networks Organizing Committee
+    abstract: 
+
+keywords:
+  - Network and Soft Materials
+  - Statistical Topology
+  - Random Packings
+  - Rheology and Jamming
+  - Network Geometry
+  - Polymer Physics
+  - Critical Phenomena
+
+organizers:
+  - name: Márton Pósfai
+    affiliation: Department of Network and Data Science, CEU
+  - name: Jun Yamamoto
+    affiliation: Department of Network and Data Science, CEU
+
+call_for_contributions:
+  status: draft
+  deadline: TBA
+  description: >-
+    Details of the call for contributions will be announced later.
+
+source_note: >-
+  This file is a draft metadata file for the 2027 edition. Public details should
+  be updated once the official NetSci 2027 and PhysNet 2027 information is
+  available. 

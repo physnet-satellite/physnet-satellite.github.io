@@ -1,0 +1,52 @@
+<!--
+Generated file. Do not edit directly.
+Edit data/series.yml, data/editions/{{ edition.year }}.yml, or templates/home_current.qmd.j2 instead.
+-->
+---
+title: ""
+toc: false
+listing: false
+---
+
+```{=html}
+<div class="landing-title-image-wrap">
+  <img
+    class="landing-title-image"
+    src="{{ edition.assets.landing_image | rel }}"
+    alt="{{ edition.kicker }}: {{ edition.title }}">
+</div>
+```
+
+Welcome to **{{ edition.title }}**, a {{ edition.conference }} satellite on complex networks whose nodes and links are physical objects embedded in space.
+
+::: {.quick-links}
+[Program](#program){.quick-link}
+[Speakers](#speakers){.quick-link}
+[Archive](archive.qmd){.quick-link}
+:::
+
+::: {.event-summary}
+
+::: {.summary-item}
+**Date**  
+{{ edition.date }}
+:::
+
+::: {.summary-item}
+**Time**  
+{{ edition.time }}
+:::
+
+::: {.summary-item}
+**Venue**  
+{{ edition.venue.name }}{% if edition.venue.room %}, {{ edition.venue.room }}{% endif %}
+:::
+
+::: {.summary-item}
+**Location**  
+{{ edition.location }}
+:::
+
+:::
+
+{% include 'edition_body.qmd.j2' %}
